@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../static/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;
+    
+
+  margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+}
+
+/* Container */
+.container {
+    background: #ffffffa2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width:29%;
+    height: 80%;
+}
+
+.cont {
+    background: #ffffffa2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width:40%;
+    height: 80%;
+}
+
+
+/* Heading */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Prediction Result */
+.result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #dff0d8;
+    color: #155724;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Image */
+img {
+    margin-top: 15px;
+    width: 100%;
+   
+    border-radius: 5px;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background: #0056b3;
+}

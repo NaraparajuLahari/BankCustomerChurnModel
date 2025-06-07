@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Bank Customer Churn Prediction</h2>
+
+        <form action="/predict" method="post">
+            <label>Credit Score:</label><input type="number" name="CreditScore" required>
+            <label>Geography (0-France, 1-Spain, 2-Germany):</label><input type="number" name="Geography" required>
+            <label>Gender (0-Male, 1-Female):</label><input type="number" name="Gender" required>
+            <label>Age:</label><input type="number" name="Age" required>
+            <label>Tenure:</label><input type="number" name="Tenure" required>
+            <label>Balance:</label><input type="number" step="any" name="Balance" required>
+            <label>Num of Products:</label><input type="number" name="NumOfProducts" required>
+            <label>Has Credit Card (0-No, 1-Yes):</label><input type="number" name="HasCrCard" required>
+            <label>Active Member (0-No, 1-Yes):</label><input type="number" name="IsActiveMember" required>
+            <label>Estimated Salary:</label><input type="number" step="any" name="EstimatedSalary" required>
+            
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
